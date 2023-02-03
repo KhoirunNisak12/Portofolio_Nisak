@@ -31,9 +31,6 @@ section::before {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
-.home .picture img{
-    width: 410px;
- }
 .home h1{
     font-size: 72px;
 }
@@ -42,9 +39,17 @@ section::before {
     font-size: 48px;
 }
 
-/* .home .arrow img{
+/* .home .col-4 .img { */
+    
+
+
+.home img{
+    width: 100%;
+ }
+
+.home .arrow img{
    width: 60px;
-} */
+}
 
 #arrow {
     animation: 2s upDown infinite;
@@ -135,7 +140,7 @@ section::before {
     content: 'Contact';
 }
 
-.contact-from {
+.contact-form {
     border: 1px solid black;
     padding: 64px 32px;
 }
@@ -144,6 +149,18 @@ section::before {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 760px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
 
 @keyframes upDown {
     0% {
